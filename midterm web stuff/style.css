@@ -1,0 +1,126 @@
+/* General Page Styling */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(255, 192, 245, 0.65);
+    color: #5b0b40;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #cc71be;
+    padding: 15px;
+    border-bottom: 4px solid #9a4296;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* hover effect */
+.navbar a:hover {
+    background-color: #ffb3e0;
+    color: #420a30;
+    transform: scale(1.1);
+}
+
+/* Main Content Area */
+.content {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: 100px auto 20px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    border: 3px dashed #ff89d4;
+}
+
+/* Page Titles */
+h1 {
+    font-size: 2.5rem;
+    color: #9a4296;
+    text-shadow: 2px 2px 5px rgba(255, 0, 150, 0.3);
+}
+
+/* Paragraph Text */
+p {
+    font-size: 1.2rem;
+    color: #5b0b40;
+}
+
+/* Text Hover Color Change */
+p:hover {
+    color: #d60fc4;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/*  Gallery Items */
+.gallery-item {
+    text-align: center;
+    background: #ffe0f5;
+    padding: 12px;
+    border-radius: 16px;
+    border: 2px solid #ff89d4;
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/*  Hover Effect */
+.gallery-item:hover {
+    transform: scale(1.1);
+    background-color: #ffc1e0;
+}
+
+/* Gallery  */
+.gallery img {
+    width: 220px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ff89d4;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.gallery img:hover {
+    transform: rotate(3deg) scale(1.05);
+    border-color: #ff4db8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 8px;
+        margin: 5px;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
